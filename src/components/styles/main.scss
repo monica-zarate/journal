@@ -1,0 +1,34 @@
+@import "./partials/variables";
+@import "./partials/fonts";
+@import "./partials/mixins";
+@import "./partials/global";
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../../assets/fonts/roboto-regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../../assets/fonts/roboto-medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../../assets/fonts/roboto-bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Slab Regular";
+  src: url("../../assets/fonts/robotoslab-regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Slab Medium";
+  src: url("../../assets/fonts/robotoslab-medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../../assets/fonts/robotoslab-bold.ttf");
+}
