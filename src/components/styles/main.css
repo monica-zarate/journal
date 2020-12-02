@@ -43,6 +43,14 @@ body {
           align-items: center;
 }
 
+.header {
+  padding: 1rem;
+}
+
+.header__nav {
+  list-style: none;
+}
+
 @font-face {
   font-family: "Roboto Regular";
   src: url("../../assets/fonts/roboto-regular.ttf");
