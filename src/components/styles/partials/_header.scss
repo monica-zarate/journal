@@ -2,8 +2,28 @@
 
 .header {
   padding: 1rem;
+  background-color: whitesmoke;
+  min-height: 18vh;
+  @extend .flex-center;
+
+  &__title-link {
+    color: $highlight;
+    font-family: $slab-bold;
+    margin: 1rem;
+  }
+
+  &__title {
+  }
 
   &__nav {
     list-style: none;
+    @extend .flex-center;
+  }
+
+  &__li {
+  }
+
+  &__link {
+    color: $headers;
   }
 }

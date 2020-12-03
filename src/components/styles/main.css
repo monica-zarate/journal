@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 
-.flex-center {
+.flex-center, .header, .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,10 +45,26 @@ body {
 
 .header {
   padding: 1rem;
+  background-color: whitesmoke;
+  min-height: 18vh;
+}
+
+.header__title-link {
+  color: #2a9d8f;
+  font-family: "Roboto Slab Bold";
+  margin: 1rem;
 }
 
 .header__nav {
   list-style: none;
+}
+
+.header__link {
+  color: #e76f51;
+}
+
+.landing {
+  background-image: url();
 }
 
 @font-face {
