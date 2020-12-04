@@ -6,11 +6,20 @@
   min-height: 18vh;
   @extend .flex-center;
 
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   &__title-link {
     color: $highlight;
     font-family: $slab-bold;
     margin: 1rem;
     text-align: center;
+
+    @include tablet {
+      margin: unset;
+    }
   }
 
   &__title {
@@ -19,6 +28,12 @@
   &__nav {
     list-style: none;
     @extend .flex-center;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 8rem;
+    }
   }
 
   &__li {
@@ -26,5 +41,9 @@
 
   &__link {
     color: $headers;
+
+    @include tablet {
+      font-size: 1.25rem;
+    }
   }
 }

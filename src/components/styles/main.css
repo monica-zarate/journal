@@ -49,6 +49,17 @@ body {
   min-height: 18vh;
 }
 
+@media (min-width: 768px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .header__title-link {
   color: #2a9d8f;
   font-family: "Roboto Slab Bold";
@@ -56,12 +67,37 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .header__title-link {
+    margin: unset;
+  }
+}
+
 .header__nav {
   list-style: none;
 }
 
+@media (min-width: 768px) {
+  .header__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 8rem;
+  }
+}
+
 .header__link {
   color: #e76f51;
+}
+
+@media (min-width: 768px) {
+  .header__link {
+    font-size: 1.25rem;
+  }
 }
 
 .landing {
@@ -69,6 +105,12 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 92vh;
+}
+
+@media (min-width: 768px) {
+  .landing {
+    background-image: url("/imgs/hero.png");
+  }
 }
 
 .landing__title {

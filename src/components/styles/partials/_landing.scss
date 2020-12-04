@@ -6,6 +6,10 @@
   background-position: center;
   min-height: 92vh;
 
+  @include tablet {
+    background-image: url("/imgs/hero.png");
+  }
+
   &__title {
     display: none;
   }
