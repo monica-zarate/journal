@@ -7,7 +7,7 @@ function Header (){
         
     <div className="header">
         <Link className="header__title-link" to={`/`}>
-        <h1 className="header__ title">True to Life</h1>
+        <h1 className="header__ title">Monica's Solstice</h1>
         </Link>
     <ul className="header__nav">
         <li className="header__li">

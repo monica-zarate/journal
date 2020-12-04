@@ -1,5 +1,12 @@
 //Landing Component Styles
 
 .landing {
-  background-image: url();
+  background-image: url("/imgs/hero_mobile.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 92vh;
+
+  &__title {
+    display: none;
+  }
 }
