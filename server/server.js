@@ -4,6 +4,11 @@ const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 
+//Controllers
+const getEntries = require("./controller/getEntries");
+const getAuthors = require("./controller/getAuthors");
+const getKeywords = require("./controller/getKeywords");
+
 // Const App will be using Express method
 const app = express();
 
