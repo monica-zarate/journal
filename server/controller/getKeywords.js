@@ -1,8 +1,19 @@
-const fs = require("fs");
+const mysql = require("sync-mysql");
 
 const getKeywords = () => {
-  const keywordsData = JSON.parse(fs.readFileSync("./model/keywords.json"));
+  const password = process.env.password;
+  const connection = new mysql({
+    host: "localhost",
+    user: "root",
+    password: password,
+    database: "my_journal",
+  });
 
+  let keywordsData = [];
+  let rows = connection.query("SELECT id, title FROM keywords");
+  for (i = 0; i < rows.length; i++) {
+    keywordsData.push(rows[i]);
+  }
   return keywordsData;
 };
 
