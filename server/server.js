@@ -7,6 +7,7 @@ const fs = require("fs");
 //Controllers
 const getEntries = require("./controller/getEntries");
 const getAuthors = require("./controller/getAuthors");
+const getAuthor = require("./controller/getAuthor");
 const getKeywords = require("./controller/getKeywords");
 const getKeyword = require("./controller/getKeyword");
 
@@ -39,6 +40,13 @@ app.route("/keywords/:id").get((req, res) => {
 
 app.route("/authors").get((req, res) => {
   res.json(getAuthors());
+});
+
+//Get Author per Id Route
+
+app.route("/authors/:id").get((req, res) => {
+  let id = req.params.id;
+  res.json(getAuthor(id));
 });
 
 // App listening on local host
