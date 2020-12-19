@@ -1,8 +1,19 @@
-const fs = require("fs");
+const mysql = require("sync-mysql");
 
 const getEntries = () => {
-  const entriesData = JSON.parse(fs.readFileSync("./model/entries.json"));
+  const password = process.env.password;
+  const connection = new mysql({
+    host: "localhost",
+    user: "root",
+    password: password,
+    database: "my_journal",
+  });
 
+  let entriesData = [];
+  let rows = connection.query("SELECT * FROM entries");
+  for (i = 0; i < rows.length; i++) {
+    entriesData.push(rows[i]);
+  }
   return entriesData;
 };
 
