@@ -10,6 +10,7 @@ const getAuthors = require("./controller/getAuthors");
 const getAuthor = require("./controller/getAuthor");
 const getKeywords = require("./controller/getKeywords");
 const getKeyword = require("./controller/getKeyword");
+const getEntry = require("./controller/getEntry");
 
 // Const App will be using Express method
 const app = express();
@@ -21,6 +22,13 @@ app.use(cors());
 
 app.route("/entries").get((req, res) => {
   res.json(getEntries());
+});
+
+//Get Entry per Id Route
+
+app.route("/entries/:id").get((req, res) => {
+  let id = req.params.id;
+  res.json(getEntry(id));
 });
 
 //Get All Keywords Route
