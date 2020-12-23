@@ -10,7 +10,12 @@
     background-image: url("/imgs/hero.png");
   }
 
-  &__title {
-    display: none;
+  &__wrapper {
+    @extend .flex-center;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 }

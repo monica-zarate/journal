@@ -6,13 +6,13 @@ import "./styles/main.css";
 function Landing (){
     return(
         <>
-    <div className="landing">
-    <h1 className="landing__title">Landing Component</h1>
-    
-</div>
-<Preview/>
-<AboutLanding/>
-</>
+            <div className="landing">    
+            </div>
+            <div className="landing__wrapper">
+                <Preview/>
+                <AboutLanding/>
+            </div>
+        </>
     );
 }
 

@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 
-.flex-center, .header, .header__nav, .preview, .post, .post__details, .about-l {
+.flex-center, .header, .header__nav, .landing__wrapper, .preview, .post, .post__details, .about-l {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,8 +113,16 @@ body {
   }
 }
 
-.landing__title {
-  display: none;
+@media (min-width: 768px) {
+  .landing__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .preview {
@@ -128,6 +136,7 @@ body {
 }
 
 .post {
+  margin: 0 0 1rem 0;
   height: 52rem;
   background-color: whitesmoke;
 }
@@ -155,7 +164,7 @@ body {
 
 .post__title {
   font-size: 1.5rem;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Slab Bold";
   margin: 1rem;
 }
 
@@ -179,6 +188,7 @@ body {
 .post__summary {
   width: 18rem;
   margin: 0 0 1rem 0;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -188,13 +198,64 @@ body {
 }
 
 .about-l {
-  height: 20rem;
+  height: 30rem;
   padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-l {
+    height: 35rem;
+  }
+}
+
+.about-l__title {
+  font-family: "Roboto Bold";
+  color: #264653;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.about-l__subtitle {
+  text-align: center;
+  font-family: "Roboto Slab Medium";
+  color: #2a9d8f;
+  margin: 0.5rem 0;
 }
 
 .about-l__icon {
   height: 4rem;
   width: 4rem;
+  border-radius: 100px;
+  margin: 0.5rem 0;
+}
+
+.about-l__description {
+  text-align: justify;
+  margin: 0.5rem 0;
+  color: #264653;
+  width: 14rem;
+}
+
+.about-l__link {
+  margin: 0.5rem 0;
+}
+
+.about-l__btn {
+  background-color: #2a9d8f;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  border: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  cursor: pointer;
+}
+
+.about-l__social {
+  background-color: white;
+  border: none;
+  height: 4rem;
+  cursor: pointer;
 }
 
 @font-face {

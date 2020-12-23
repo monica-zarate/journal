@@ -11,11 +11,10 @@ function AboutLanding(){
             <h2 className="about-l__subtitle">My name is Monica</h2>
             <img className="about-l__icon" src={author} alt=""/>
             <p className="about-l__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum a non ullam autem voluptates voluptatem quasi, amet nobis nulla inventore possimus dolore nihil ratione, exercitationem magni, labore adipisci suscipit veritatis.</p>
-            <button className="about-l__social"><FontAwesomeIcon icon={['fab','instagram']} /></button>
             <Link to={`/about`}className="about-l__link">
-            <button className="about-l__btn">Read more...</button>
+            <button className="about-l__btn">About me</button>
             </Link>
-
+            <button className="about-l__social"><FontAwesomeIcon icon={['fab','instagram']} size="3x"/></button>
         </div>
     )
 }
