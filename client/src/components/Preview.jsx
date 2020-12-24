@@ -23,7 +23,7 @@ const getPosts = ()=>{
 
 //Calling getPosts method
     useEffect(()=>{
-        if(posts.length==0){
+        if(posts.length===0){
             getPosts()
         }
     }, [posts]);
