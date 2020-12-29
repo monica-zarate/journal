@@ -7,7 +7,7 @@ import About from "./components/About";
 import BlogMenu from "./components/BlogMenu";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-//import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import BlogKeyword from "./components/BlogKeyword";
 
 function App() {
   library.add(fab);
@@ -17,7 +17,8 @@ function App() {
       <Switch>
         <Route path="/" component={Landing} exact />
         <Route path="/about" component={About} />
-        <Route path="/blog_menu" component={BlogMenu} />
+        <Route path="/topics" component={BlogMenu} exact />
+        <Route path="/topics/:title" component={BlogKeyword} exact />
       </Switch>
     </div>
   );
