@@ -1,6 +1,6 @@
 const mysql = require("sync-mysql");
 
-const getKeyword = (id) => {
+const getKeyword = (title) => {
   const password = process.env.password;
   const connection = new mysql({
     host: "localhost",
@@ -10,7 +10,9 @@ const getKeyword = (id) => {
   });
 
   let keywordData = [];
-  let rows = connection.query("SELECT id, title FROM keywords WHERE id=" + id);
+  let rows = connection.query(
+    "SELECT id, title FROM keywords WHERE title='" + title + "'"
+  );
   keywordData.push(rows[0]);
 
   return keywordData;
