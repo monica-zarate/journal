@@ -9,7 +9,7 @@ const keywordsAPI = "http://localhost:5000/keywords";
 function BlogMenu (){
 //Set State
 
-const [keywords, setKeywords] =useState([]);
+const [keywords, setKeywords] = useState([]);
 
 //API call to retrieve keywords data
     const getKeywords = ()=>{
@@ -31,7 +31,9 @@ const [keywords, setKeywords] =useState([]);
         <ul>
             {keywords.map((keyword)=>(
                 <li>
-                    <Link to={`/topics/${keyword.title}`}>{keyword.title}</Link>
+                    <Link to={{
+                        pathname: `/keywords/${keyword.title}`, id: keyword.id
+                    }}>{keyword.title}</Link>
                     </li>
             ))}
         </ul>

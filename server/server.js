@@ -45,7 +45,7 @@ app.route("/keywords").get((req, res) => {
   res.json(getKeywords());
 });
 
-//Get Keyword per Id Route
+//Get Keyword per Title Route
 
 app.route("/keywords/:title").get((req, res) => {
   let title = req.params.title;
