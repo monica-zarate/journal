@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./styles/main.css";
 import Axios from "axios";
-import Post from "./Post";
+import PostPreview from "./PostPreview";
 
 function BlogKeyword(props){
 //Entries per Keyword API
@@ -25,17 +25,15 @@ const getPostsKeyword = ()=>{
 
 //Calling getPostsKeyword method
     useEffect(()=>{
-        if(loaded == false){
+        if(loaded === false){
             getPostsKeyword()
         }
     }, [posts]);
 
-    // console.log(posts)
-
     return(
         <div className="preview">
             {posts.map((post)=>
-                <Post post = {post} ></Post>
+                <PostPreview post = {post} ></PostPreview>
             )}
             
         </div>

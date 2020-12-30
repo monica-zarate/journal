@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./styles/main.css";
 import Axios from "axios";
-import Post from "./Post";
+import PostPreview from "./PostPreview";
 
 //Posts API
 const postsAPI = "http://localhost:5000/entries";
@@ -30,7 +30,7 @@ const getPosts = ()=>{
     return(
         <div className="preview">
             {posts.map((post)=>(
-                <Post post ={post}></Post>
+                <PostPreview post ={post}></PostPreview>
             ))}
             
         </div>
