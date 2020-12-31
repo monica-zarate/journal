@@ -27,11 +27,11 @@ const [keywords, setKeywords] = useState([]);
         }
     },[keywords]);
     return(
-    <div>
-        <ul>
+    <div className="blog-menu">
+        <ul className="blog-menu__list">
             {keywords.map((keyword)=>(
-                <li>
-                    <Link to={{
+                <li className="blog-menu__list-item">
+                    <Link className="blog-menu__link" to={{
                         pathname: `/keywords/${keyword.title}`, id: keyword.id
                     }}>{keyword.title}</Link>
                     </li>

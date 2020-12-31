@@ -1,0 +1,21 @@
+//Blog Menu Component Styles
+
+.blog-menu {
+  padding: 1rem;
+
+  &__list {
+    @extend .flex-center;
+  }
+
+  &__list-item {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    font-family: $slab-medium;
+    color: $primary-color;
+  }
+
+  &__link:visited {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}

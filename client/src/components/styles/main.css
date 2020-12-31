@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 
-.flex-center, .header, .header__nav, .landing__wrapper, .preview, .post, .post__details, .about-l, .about {
+.flex-center, .header, .header__nav, .landing__wrapper, .preview, .post, .post__details, .about-l, .about, .blog-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,6 +302,22 @@ body {
   .about__content {
     margin: 1rem 10rem;
   }
+}
+
+.blog-menu {
+  padding: 1rem;
+}
+
+.blog-menu__list-item {
+  list-style: none;
+  margin: 1rem 0 0 0;
+  font-family: "Roboto Slab Medium";
+  color: #264653;
+}
+
+.blog-menu__link:visited {
+  text-decoration: none;
+  color: #264653;
 }
 
 @font-face {
