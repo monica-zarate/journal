@@ -15,7 +15,7 @@ function Header (){
             </Link>
         </li>
                 <li className="header__li">
-            <Link className="header__link" to={`/keywords`}>Blog
+            <Link className="header__link" to={`/index`}>Blog Index
             </Link>
         </li>
     </ul>

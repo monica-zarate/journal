@@ -5,6 +5,16 @@
 
   &__list {
     @extend .flex-center;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 2rem;
+    }
+
+    @include desktop {
+      margin: 5rem 15rem;
+    }
   }
 
   &__list-item {
@@ -12,10 +22,39 @@
     margin: 1rem 0 0 0;
     font-family: $slab-medium;
     color: $primary-color;
+    @extend .flex-center;
+    border: 1px solid $primary-color;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+
+    @include tablet {
+      margin: 1rem;
+      height: 18rem;
+    }
   }
 
-  &__link:visited {
+  &__img {
+    padding: 1rem;
+    width: 18rem;
+
+    @include tablet {
+      display: none;
+    }
+
+    &--desk {
+      display: none;
+
+      @include tablet {
+        display: block;
+        padding: 1rem;
+        width: 20rem;
+      }
+    }
+  }
+
+  &__link {
     text-decoration: none;
     color: $primary-color;
+    margin: 0 0 1rem 0;
   }
 }

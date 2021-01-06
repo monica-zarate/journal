@@ -6,7 +6,7 @@ import Axios from "axios";
 //Keywords API
 const keywordsAPI = "http://localhost:5000/keywords";
 
-function BlogMenu (){
+function BlogIndex (){
 //Set State
 
 const [keywords, setKeywords] = useState([]);
@@ -32,11 +32,11 @@ const [keywords, setKeywords] = useState([]);
             {keywords.map((keyword)=>(
                 <li className="blog-menu__list-item">
                     
-                        <img src={keyword.thumb} 
+                        <img className="blog-menu__img" src={keyword.thumb} 
                         alt=""/>
-                        <img src={keyword.thumb_d} alt=""/>
+                        <img className="blog-menu__img--desk" src={keyword.thumb_d} alt=""/>
                     <Link className="blog-menu__link" to={{
-                        pathname: `/keywords/${keyword.path}`, id: keyword.id
+                        pathname: `/index/keyword/${keyword.path}`, id: keyword.id
                     }}>{keyword.title}</Link>
                     
                     </li>
@@ -46,4 +46,4 @@ const [keywords, setKeywords] = useState([]);
     );
 }
 
-export default BlogMenu;
+export default BlogIndex;
