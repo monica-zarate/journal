@@ -31,9 +31,14 @@ const [keywords, setKeywords] = useState([]);
         <ul className="blog-menu__list">
             {keywords.map((keyword)=>(
                 <li className="blog-menu__list-item">
+                    
+                        <img src={keyword.thumb} 
+                        alt=""/>
+                        <img src={keyword.thumb_d} alt=""/>
                     <Link className="blog-menu__link" to={{
-                        pathname: `/keywords/${keyword.title}`, id: keyword.id
+                        pathname: `/keywords/${keyword.path}`, id: keyword.id
                     }}>{keyword.title}</Link>
+                    
                     </li>
             ))}
         </ul>

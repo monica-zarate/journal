@@ -10,7 +10,9 @@ const getKeywords = () => {
   });
 
   let keywordsData = [];
-  let rows = connection.query("SELECT id, title FROM keywords");
+  let rows = connection.query(
+    "SELECT id, title, thumb, thumb_d, path FROM keywords"
+  );
   for (i = 0; i < rows.length; i++) {
     keywordsData.push(rows[i]);
   }

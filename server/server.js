@@ -45,11 +45,11 @@ app.route("/keywords").get((req, res) => {
   res.json(getKeywords());
 });
 
-//Get Keyword per Title Route
+//Get Keyword per Title Route (using path)
 
-app.route("/keywords/:title").get((req, res) => {
-  let title = req.params.title;
-  res.json(getKeyword(title));
+app.route("/keywords/:path").get((req, res) => {
+  let path = req.params.path;
+  res.json(getKeyword(path));
 });
 
 //Get All Authors Route
