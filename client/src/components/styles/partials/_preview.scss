@@ -10,25 +10,31 @@
 }
 
 .post {
-  margin: 0 0 1rem 0;
+  margin: 0 1rem 1rem 1rem;
   @extend .flex-center;
-  height: 52rem;
+  padding: 1rem;
   background-color: whitesmoke;
 
   @include tablet {
     flex-direction: row;
-    height: 32rem;
-    min-width: 44rem;
     justify-content: space-around;
   }
 
   &__img {
-    height: 30rem;
+    width: 16rem;
+
+    @include tablet {
+      width: 18rem;
+    }
   }
 
   &__details {
     @extend .flex-center;
-    height: 20rem;
+
+    @include tablet {
+      height: 16rem;
+      margin: 0 0 0 1rem;
+    }
   }
 
   &__title {
@@ -58,9 +64,5 @@
     width: 18rem;
     margin: 0 0 1rem 0;
     text-align: center;
-
-    @include tablet {
-      width: 15rem;
-    }
   }
 }

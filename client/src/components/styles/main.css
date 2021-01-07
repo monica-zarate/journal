@@ -140,8 +140,8 @@ body {
 }
 
 .post {
-  margin: 0 0 1rem 0;
-  height: 52rem;
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
   background-color: whitesmoke;
 }
 
@@ -151,19 +151,26 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 32rem;
-    min-width: 44rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
 .post__img {
-  height: 30rem;
+  width: 16rem;
 }
 
-.post__details {
-  height: 20rem;
+@media (min-width: 768px) {
+  .post__img {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .post__details {
+    height: 16rem;
+    margin: 0 0 0 1rem;
+  }
 }
 
 .post__title {
@@ -193,12 +200,6 @@ body {
   width: 18rem;
   margin: 0 0 1rem 0;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .post__summary {
-    width: 15rem;
-  }
 }
 
 .about-l {
