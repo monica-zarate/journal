@@ -31,14 +31,14 @@ function Entry(props){
     }, [post]);
 
     return(
-    <div>
-        <h2>{post.title}</h2>
-        <p>{post.author_id}</p>
-        <p>{post.entry_date}</p>
-        <p>{post.content}</p>
-        <p>{post.keyword1_id}</p>
-        <p>{post.keyword2_id}</p>
-        <p>{post.keyword3_id}</p>
+    <div className="entry">
+        <h2 className="entry__title">{post.title}</h2>
+        <p className="entry__author">{post.author_id}</p>
+        <p className="entry__timestamp">{post.entry_date}</p>
+        <p className="entry__content">{post.content}</p>
+        <p className="entry__keywords">{post.keyword1_id}</p>
+        <p className="entry__keywords">{post.keyword2_id}</p>
+        <p className="entry__keywords">{post.keyword3_id}</p>
     </div>
 )
 }

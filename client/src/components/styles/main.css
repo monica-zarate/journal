@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 
-.flex-center, .header, .header__nav, .landing__wrapper, .preview, .post, .post__details, .about-l, .about, .index__list, .index__list-item {
+.flex-center, .header, .header__nav, .landing__wrapper, .preview, .post, .post__details, .about-l, .about, .index__list, .index__list-item, .entry {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,6 +371,50 @@ body {
   text-decoration: none;
   color: #264653;
   margin: 0 0 1rem 0;
+}
+
+.entry {
+  margin: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .entry {
+    margin: 3rem 2rem;
+  }
+}
+
+.entry__title {
+  font-family: "Roboto Slab Medium";
+  margin: 0 0 1rem 0;
+  color: #264653;
+}
+
+@media (min-width: 768px) {
+  .entry__title {
+    font-size: 2rem;
+  }
+}
+
+.entry__author {
+  margin: 0 0 1rem 0;
+}
+
+.entry__timestamp {
+  margin: 0 0 1rem 0;
+}
+
+.entry__content {
+  margin: 0 0 1rem 0;
+  width: 16rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .entry__content {
+    margin: 2rem 10rem;
+    width: unset;
+  }
 }
 
 @font-face {

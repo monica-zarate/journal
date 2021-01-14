@@ -1,0 +1,43 @@
+// Entry Component Styles
+
+.entry {
+  margin: 2rem 1rem;
+  @extend .flex-center;
+
+  @include tablet {
+    margin: 3rem 2rem;
+  }
+
+  &__title {
+    font-family: $slab-medium;
+    margin: 0 0 1rem 0;
+    color: $primary-color;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  &__author {
+    margin: 0 0 1rem 0;
+  }
+
+  &__timestamp {
+    margin: 0 0 1rem 0;
+  }
+
+  &__content {
+    margin: 0 0 1rem 0;
+    width: 16rem;
+    line-height: 2rem;
+    text-align: justify;
+
+    @include tablet {
+      margin: 2rem 10rem;
+      width: unset;
+    }
+  }
+
+  &__keywords {
+  }
+}
