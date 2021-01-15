@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles/main.css";
 import author from "../assets/imgs/author_icon.jpg";
-import entry from "../assets/imgs/entry_test.jpg";
 import { Link } from "react-router-dom";
 
 function PostPreview(props){
@@ -11,7 +10,7 @@ function PostPreview(props){
     return(
         <Link to={{pathname: `/entries/${post.title}`, id: post.id}}>
         <div className="post">
-                <img className="post__img" src={entry} alt=""/>
+                <img className="post__img" src={post.thumb} alt=""/>
                 <div className="post__details">
                     <h2 className="post__title">{post.title}</h2>
                     <img className="post__author-icon" src={author} alt=""/>
