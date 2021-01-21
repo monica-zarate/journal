@@ -11,7 +11,7 @@
   &__title {
     font-family: $slab-medium;
     margin: 0 0 1rem 0;
-    color: $primary-color;
+    color: $headers;
 
     @include tablet {
       font-size: 2rem;
@@ -29,12 +29,41 @@
   &__content {
     margin: 0 0 1rem 0;
     width: 16rem;
-    line-height: 2rem;
-    text-align: justify;
+    @extend .flex-center;
 
     @include tablet {
-      margin: 2rem 10rem;
+      margin: 2rem 8rem;
       width: unset;
+    }
+
+    @include desktop {
+      margin: 2rem 12rem;
+    }
+  }
+
+  &__h2 {
+    font-family: $slab-medium;
+    margin: 1rem 0;
+    color: $primary-color;
+  }
+
+  &__p {
+    margin: 1rem 0;
+    line-height: 2rem;
+    text-align: justify;
+    color: $primary-color;
+  }
+
+  &__img {
+    width: 16rem;
+    margin: 1rem 0;
+
+    @include tablet {
+      width: 40rem;
+    }
+
+    @include desktop {
+      width: 50rem;
     }
   }
 
