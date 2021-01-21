@@ -35,7 +35,8 @@ function Entry(props){
         <h2 className="entry__title">{post.title}</h2>
         <p className="entry__author">{post.author_id}</p>
         <p className="entry__timestamp">{post.entry_date}</p>
-        <div className="entry__content" dangerouslySetInnerHTML={{__html: post.content}}></div>
+        <div className="entry__content" dangerouslySetInnerHTML={{__html: post.content}}>
+        </div>
         <p className="entry__keywords">{post.keyword1_id}</p>
         <p className="entry__keywords">{post.keyword2_id}</p>
         <p className="entry__keywords">{post.keyword3_id}</p>

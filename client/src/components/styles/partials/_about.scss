@@ -6,6 +6,12 @@
 
   @include tablet {
     padding: 2rem;
+    position: sticky;
+    top: 8rem;
+  }
+
+  @include desktop {
+    top: 10rem;
   }
 
   &__title {

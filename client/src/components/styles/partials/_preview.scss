@@ -18,6 +18,12 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-around;
+    height: 28rem;
+    width: 40rem;
+  }
+
+  &__link {
+    color: $primary-color;
   }
 
   &__img {
@@ -41,6 +47,8 @@
     font-size: 1.5rem;
     font-family: $slab-bold;
     margin: 1rem;
+    text-align: center;
+    color: $headers;
   }
 
   &__author-icon {
@@ -64,5 +72,6 @@
     width: 18rem;
     margin: 0 0 1rem 0;
     text-align: center;
+    line-height: 2rem;
   }
 }
