@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/main.css";
-import author from "../assets/imgs/author_icon.jpg";
+import author from "../assets/imgs/author.png";
 import { Link } from "react-router-dom";
 
 function PostPreview(props){

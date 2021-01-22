@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles/main.css";
-// import author from "../assets/imgs/author_icon.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Axios from "axios";

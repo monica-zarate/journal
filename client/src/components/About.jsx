@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles/main.css";
-// import about from "../assets/imgs/about.png";
 import Axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
