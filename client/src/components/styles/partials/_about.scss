@@ -58,11 +58,15 @@
     cursor: pointer;
   }
 
+  &__social-link {
+  }
+
   &__social {
     background-color: white;
     border: none;
     height: 4rem;
     cursor: pointer;
+    outline: none;
   }
 }
 
@@ -72,25 +76,27 @@
   @extend .flex-center;
   padding: 1rem;
 
+  @include tablet {
+    margin: 0 8rem;
+  }
+
+  @include desktop {
+    margin: 0 12rem;
+  }
+
   &__title {
     font-family: $medium;
     margin: 1rem 0;
     color: $primary-color;
-  }
-
-  &__subtitle {
-    font-family: $slab-medium;
     text-align: center;
-    margin: 1rem 0;
-    color: $highlight;
   }
 
   &__img {
-    width: 75%;
+    width: 16rem;
     margin: 1rem 0;
 
     @include tablet {
-      width: 50%;
+      width: 25rem;
     }
   }
 
@@ -100,9 +106,17 @@
     margin: 1rem;
     line-height: 2rem;
     color: $primary-color;
+  }
 
-    @include tablet {
-      margin: 1rem 10rem;
-    }
+  &__social-link {
+    margin: 0 0 5rem 0;
+  }
+
+  &__social {
+    background-color: white;
+    border: none;
+    height: 4rem;
+    cursor: pointer;
+    outline: none;
   }
 }

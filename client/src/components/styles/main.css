@@ -284,33 +284,40 @@ body {
   border: none;
   height: 4rem;
   cursor: pointer;
+  outline: none;
 }
 
 .about {
   padding: 1rem;
 }
 
+@media (min-width: 768px) {
+  .about {
+    margin: 0 8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    margin: 0 12rem;
+  }
+}
+
 .about__title {
   font-family: "Roboto Medium";
   margin: 1rem 0;
   color: #264653;
-}
-
-.about__subtitle {
-  font-family: "Roboto Slab Medium";
   text-align: center;
-  margin: 1rem 0;
-  color: #2a9d8f;
 }
 
 .about__img {
-  width: 75%;
+  width: 16rem;
   margin: 1rem 0;
 }
 
 @media (min-width: 768px) {
   .about__img {
-    width: 50%;
+    width: 25rem;
   }
 }
 
@@ -322,10 +329,16 @@ body {
   color: #264653;
 }
 
-@media (min-width: 768px) {
-  .about__content {
-    margin: 1rem 10rem;
-  }
+.about__social-link {
+  margin: 0 0 5rem 0;
+}
+
+.about__social {
+  background-color: white;
+  border: none;
+  height: 4rem;
+  cursor: pointer;
+  outline: none;
 }
 
 .index {
