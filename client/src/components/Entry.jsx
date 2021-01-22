@@ -33,8 +33,8 @@ function Entry(props){
     return(
     <div className="entry">
         <h2 className="entry__title">{post.title}</h2>
-        <p className="entry__author">{post.author_id}</p>
-        <p className="entry__timestamp">{post.entry_date}</p>
+        <p className="entry__author">{post.name}</p>
+        <p className="entry__timestamp">{new Date(post.entry_date).toLocaleDateString()}</p>
         <div className="entry__content" dangerouslySetInnerHTML={{__html: post.content}}>
         </div>
         <p className="entry__keywords">{post.keyword1_id}</p>
