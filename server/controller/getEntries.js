@@ -10,7 +10,10 @@ const getEntries = () => {
   });
 
   let entriesData = [];
-  let rows = connection.query("SELECT * FROM entries");
+  let rows = connection.query(`SELECT entry.*, author.name  FROM 
+                              entries as entry
+                              join authors as author
+                              on entry.author_id = author.id`);
   for (i = 0; i < rows.length; i++) {
     entriesData.push(rows[i]);
   }
