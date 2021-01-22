@@ -10,9 +10,7 @@ const getAuthor = (id) => {
   });
 
   let authorData = [];
-  let rows = connection.query(
-    "SELECT id, name, bio FROM authors WHERE id=" + id
-  );
+  let rows = connection.query("SELECT * FROM authors WHERE id=" + id);
   authorData.push(rows[0]);
 
   return authorData;

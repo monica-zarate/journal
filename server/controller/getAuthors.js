@@ -10,7 +10,7 @@ const getAuthors = () => {
   });
 
   let authorsData = [];
-  let rows = connection.query("SELECT id, name, bio FROM authors");
+  let rows = connection.query("SELECT * FROM authors");
   for (i = 0; i < rows.length; i++) {
     authorsData.push(rows[i]);
   }
