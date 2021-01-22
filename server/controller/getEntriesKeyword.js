@@ -1,6 +1,6 @@
 const mysql = require("sync-mysql");
 
-const getEntriesKeyword = (id) => {
+const getEntriesKeyword = (path) => {
   const password = process.env.password;
   const connection = new mysql({
     host: "localhost",
@@ -10,13 +10,13 @@ const getEntriesKeyword = (id) => {
   });
 
   let rows = connection.query(
-    "select * from entries where keyword1_id = " +
-      id +
-      " or keyword2_id = " +
-      id +
-      " or keyword3_id = " +
-      id +
-      ";"
+    `select entry.*, key_1.title as title1, key_2.title as title2, key_3.title as title3 from entries as entry
+      join keywords as key_1 on entry.keyword1_id = key_1.id
+      left join keywords as key_2 on entry.keyword2_id = key_2.id
+      left join keywords as key_3 on entry.keyword3_id = key_3.id
+      where key_1.path = '${path}'
+      or key_2.path = '${path}'
+      or key_3.path = '${path}'`
   );
 
   console.log(rows);

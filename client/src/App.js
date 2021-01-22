@@ -19,8 +19,8 @@ function App() {
         <Route path="/" component={Landing} exact />
         <Route path="/about" component={About} />
         <Route path="/index" component={BlogIndex} exact />
-        <Route path="/index/keyword/:title" component={BlogKeyword} exact />
-        <Route path="/entries/:title" component={Entry} exact />
+        <Route path="/index/keyword/:path" component={BlogKeyword} exact />
+        <Route path="/entries/:path" component={Entry} exact />
       </Switch>
     </div>
   );

@@ -27,16 +27,16 @@ app.route("/entries").get((req, res) => {
 
 //Get Entry per Id Route
 
-app.route("/entries/:id").get((req, res) => {
-  let id = req.params.id;
-  res.json(getEntry(id));
+app.route("/entries/:path").get((req, res) => {
+  let path = req.params.path;
+  res.json(getEntry(path));
 });
 
 //Get Entries per Keywords
 
-app.route("/entries/keywords/:id").get((req, res) => {
-  let id = req.params.id;
-  res.json(getEntriesKeyword(id));
+app.route("/entries/keywords/:path").get((req, res) => {
+  let path = req.params.path;
+  res.json(getEntriesKeyword(path));
 });
 
 //Get All Keywords Route

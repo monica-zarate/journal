@@ -5,7 +5,7 @@ import Axios from "axios";
 function Entry(props){
 
     //Posts API per entry id
-    const postsAPI = "http://localhost:5000/entries/" + props.location.id;
+    const postsAPI = "http://localhost:5000/entries/";
 
     //Set State
     const [post, setPost] = useState([]);
@@ -13,14 +13,13 @@ function Entry(props){
 
     //API call to retrieve post data
     const getPost = ()=>{
-        if(props.location.id !== undefined){
-            Axios.get(postsAPI).then((response)=>{
+        let path = props.match.params.path;
+            Axios.get(postsAPI+path).then((response)=>{
                 itsLoaded(true);
                 setPost(response.data[0]);
             }).catch((error)=>{
                 console.log(error)
             })
-        }
     }
 
     //Calling getPost method

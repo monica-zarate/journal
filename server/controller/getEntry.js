@@ -1,6 +1,6 @@
 const mysql = require("sync-mysql");
 
-const getEntry = (id) => {
+const getEntry = (path) => {
   const password = process.env.password;
   const connection = new mysql({
     host: "localhost",
@@ -13,7 +13,7 @@ const getEntry = (id) => {
   let rows = connection.query(`SELECT entry.*, author.name  FROM 
                               entries as entry
                               join authors as author
-                              on entry.author_id = author.id where entry.id = ${id}`);
+                              on entry.author_id = author.id where entry.path = '${path}'`);
   entryData.push(rows[0]);
 
   return entryData;

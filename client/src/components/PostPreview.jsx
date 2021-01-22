@@ -8,7 +8,7 @@ function PostPreview(props){
     let post = props.post;
 
     return(
-        <Link className="post__link" to={{pathname: `/entries/${post.title}`, id: post.id}}>
+        <Link className="post__link" to={{pathname: `/entries/${post.path}`}}>
         <div className="post">
                 <img className="post__img" src={post.thumb} alt=""/>
                 <div className="post__details">
