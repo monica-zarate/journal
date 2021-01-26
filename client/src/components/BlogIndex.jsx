@@ -4,7 +4,7 @@ import "./styles/main.css";
 import Axios from "axios";
 
 //Keywords API
-const keywordsAPI = "http://localhost:5000/keywords";
+const keywordsAPI = "/api/keywords";
 
 function BlogIndex (){
 //Set State

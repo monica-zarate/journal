@@ -4,7 +4,7 @@ import Axios from "axios";
 import PostPreview from "./PostPreview";
 
 //Posts API
-const postsAPI = "http://localhost:5000/entries";
+const postsAPI = "/api/entries";
 
 function Preview (){
 //Set State

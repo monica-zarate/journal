@@ -14,7 +14,7 @@ function PostPreview(props){
                 <div className="post__details">
                     <h2 className="post__title">{post.title}</h2>
                     <img className="post__author-icon" src={author} alt=""/>
-                    <p className="post__author">{post.name}</p>
+                    <p className="post__author">by {post.name}</p>
                     <p className="post__date">{new Date(post.entry_date).toLocaleDateString()}</p>
                     <p className="post__summary">{post.summary}</p>
                 </div>

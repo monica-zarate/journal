@@ -4,7 +4,7 @@ import Axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 //Authors API
-const postsAPI = "http://localhost:5000/authors";
+const postsAPI = "/api/authors";
 
 function About (){
 

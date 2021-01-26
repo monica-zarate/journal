@@ -5,7 +5,7 @@ import PostPreview from "./PostPreview";
 
 function BlogKeyword(props){
 //Entries per Keyword API
-let postsAPI = "http://localhost:5000/entries/keywords/" ;
+let postsAPI = "/api/entries/keywords/" ;
 
 //Set State
 const[posts, setPosts] = useState([]);

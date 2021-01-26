@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Axios from "axios";
 
 //Authors API
-const authorsAPI = "http://localhost:5000/authors/";
+const authorsAPI = "/api/authors/";
 
 function AboutLanding(){
     const getAuthor = ()=>{

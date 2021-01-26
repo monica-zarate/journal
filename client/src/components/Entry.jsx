@@ -5,7 +5,7 @@ import Axios from "axios";
 function Entry(props){
 
     //Posts API per entry id
-    const postsAPI = "http://localhost:5000/entries/";
+    const postsAPI = "/api/entries/";
 
     //Set State
     const [post, setPost] = useState([]);
