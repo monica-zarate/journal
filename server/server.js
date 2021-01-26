@@ -2,6 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
+const path = require("path");
 
 //Controllers
 const getEntries = require("./controller/getEntries");
@@ -17,7 +18,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-
+app.use(express.static(path.join(__dirname, "../client/build")));
 //Get All Entries Route
 
 app.route("/api/entries").get((req, res) => {
@@ -62,6 +63,11 @@ app.route("/api/authors").get((req, res) => {
 app.route("/api/authors/:id").get((req, res) => {
   let id = req.params.id;
   res.json(getAuthor(id));
+});
+
+//
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/../client/build/index.html"));
 });
 
 // App listening on local host

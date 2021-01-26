@@ -16,6 +16,7 @@
     "fs": "0.0.1-security",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.6",
+    "path": "^0.12.7",
     "sync-mysql": "^3.0.1",
     "sync-sql": "^1.0.2",
     "uuid": "^8.3.2"
