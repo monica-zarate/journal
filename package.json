@@ -3,7 +3,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "pre-run": "cd client/ && npm i && npm run build && cd .. && cd server/ && npm i",
+    "heroku-postbuild": "cd client/ && npm i && npm run build && cd .. && cd server/ && npm i",
     "start": "cd server/ && npm start"
 
   },
