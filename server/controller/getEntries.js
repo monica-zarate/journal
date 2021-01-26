@@ -1,12 +1,15 @@
 const mysql = require("sync-mysql");
 
 const getEntries = () => {
+  const host = process.env.host;
+  const user = process.env.user;
   const password = process.env.password;
+  const database = process.env.database;
   const connection = new mysql({
-    host: "localhost",
-    user: "root",
+    host: host,
+    user: user,
     password: password,
-    database: "my_journal",
+    database: database,
   });
 
   let entriesData = [];
