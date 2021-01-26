@@ -1,0 +1,10 @@
+{"name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "pre-run": "cd client/ && npm i && npm run build && cd .. && cd server/ && npm i",
+    "start": "cd server/ && npm start"
+
+  },
+  "author": "Monica Zarate"}

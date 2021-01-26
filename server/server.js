@@ -1,3 +1,4 @@
+require("dotenv").config();
 // Express and npm set-up
 const express = require("express");
 const cors = require("cors");
