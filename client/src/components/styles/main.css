@@ -66,7 +66,7 @@ body {
 }
 
 .header__title-link {
-  color: #e76f51;
+  color: #2e8d51;
   font-family: "Roboto Slab Bold";
   margin: 1rem;
   text-align: center;
@@ -96,12 +96,16 @@ body {
 }
 
 .header__link {
-  color: #264653;
+  color: #094d92;
+  font-family: "Roboto Medium";
 }
 
 @media (min-width: 768px) {
   .header__link {
     font-size: 1.25rem;
+  }
+  .header__link:hover {
+    color: #2e8d51;
   }
 }
 
@@ -164,7 +168,7 @@ body {
 }
 
 .post__link {
-  color: #264653;
+  color: #094d92;
 }
 
 .post__img {
@@ -189,7 +193,7 @@ body {
   font-family: "Roboto Slab Bold";
   margin: 1rem;
   text-align: center;
-  color: #e76f51;
+  color: #2e8d51;
 }
 
 .post__author-icon {
@@ -237,7 +241,7 @@ body {
 
 .about-l__title {
   font-family: "Roboto Bold";
-  color: #264653;
+  color: #094d92;
   margin: 0.5rem 0;
   text-align: center;
 }
@@ -245,7 +249,7 @@ body {
 .about-l__subtitle {
   text-align: center;
   font-family: "Roboto Slab Medium";
-  color: #2a9d8f;
+  color: #f4a261;
   margin: 0.5rem 0;
 }
 
@@ -259,7 +263,7 @@ body {
 .about-l__description {
   text-align: justify;
   margin: 0.5rem 0;
-  color: #264653;
+  color: #094d92;
   width: 14rem;
   line-height: 2rem;
 }
@@ -269,7 +273,7 @@ body {
 }
 
 .about-l__btn {
-  background-color: #2a9d8f;
+  background-color: #f4a261;
   padding: 0.5rem 2rem;
   border-radius: 4px;
   border: none;
@@ -306,7 +310,7 @@ body {
 .about__title {
   font-family: "Roboto Medium";
   margin: 1rem 0;
-  color: #264653;
+  color: #094d92;
   text-align: center;
 }
 
@@ -326,7 +330,7 @@ body {
   text-align: justify;
   margin: 1rem;
   line-height: 2rem;
-  color: #264653;
+  color: #094d92;
 }
 
 .about__social-link {
@@ -367,8 +371,8 @@ body {
   list-style: none;
   margin: 1rem 0 0 0;
   font-family: "Roboto Slab Medium";
-  color: #264653;
-  border: 1px solid #264653;
+  color: #094d92;
+  border: 1px solid #094d92;
   background-color: whitesmoke;
   text-transform: uppercase;
 }
@@ -405,7 +409,7 @@ body {
 
 .index__link {
   text-decoration: none;
-  color: #264653;
+  color: #094d92;
   margin: 0 0 1rem 0;
 }
 
@@ -422,7 +426,7 @@ body {
 .entry__title {
   font-family: "Roboto Slab Medium";
   margin: 0 0 1rem 0;
-  color: #e76f51;
+  color: #2e8d51;
 }
 
 @media (min-width: 768px) {
@@ -460,14 +464,14 @@ body {
 .entry__h2 {
   font-family: "Roboto Slab Medium";
   margin: 1rem 0;
-  color: #264653;
+  color: #094d92;
 }
 
 .entry__p {
   margin: 1rem 0;
   line-height: 2rem;
   text-align: justify;
-  color: #264653;
+  color: #094d92;
 }
 
 .entry__img {

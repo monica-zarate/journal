@@ -44,9 +44,13 @@
 
   &__link {
     color: $primary-color;
+    font-family: $medium;
 
     @include tablet {
       font-size: 1.25rem;
+      &:hover {
+        color: $headers;
+      }
     }
   }
 }
