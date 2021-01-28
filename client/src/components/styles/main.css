@@ -290,6 +290,13 @@ body {
   text-transform: uppercase;
   font-family: "Roboto Medium";
   cursor: pointer;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .about-l__btn:hover {
+    background-color: #f0842d;
+  }
 }
 
 .about-l__social {
