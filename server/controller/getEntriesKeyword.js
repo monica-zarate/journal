@@ -24,9 +24,9 @@ const getEntriesKeyword = (path) => {
       or key_3.path = '${path}'`
   );
 
-  console.log(rows);
+  let printRows = rows.reverse();
 
-  return rows;
+  return printRows;
 };
 
 module.exports = getEntriesKeyword;

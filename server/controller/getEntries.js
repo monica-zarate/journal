@@ -20,7 +20,8 @@ const getEntries = () => {
   for (i = 0; i < rows.length; i++) {
     entriesData.push(rows[i]);
   }
-  return entriesData;
+  let printData = entriesData.reverse();
+  return printData;
 };
 
 module.exports = getEntries;
