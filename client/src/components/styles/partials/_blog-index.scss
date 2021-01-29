@@ -23,13 +23,17 @@
     font-family: $slab-medium;
     color: $primary-color;
     @extend .flex-center;
-    border: 1px solid $primary-color;
+    box-shadow: 0px 0px 6px 0px rgba(145, 145, 145, 0.5);
     background-color: whitesmoke;
     text-transform: uppercase;
+    border-radius: 10px;
 
     @include tablet {
       margin: 1rem;
       height: 18rem;
+      &:hover {
+        box-shadow: 0px 0px 6px 0px rgba(44, 44, 44, 0.5);
+      }
     }
   }
 

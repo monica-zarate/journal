@@ -388,15 +388,21 @@ body {
   margin: 1rem 0 0 0;
   font-family: "Roboto Slab Medium";
   color: #094d92;
-  border: 1px solid #094d92;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(145, 145, 145, 0.5);
+          box-shadow: 0px 0px 6px 0px rgba(145, 145, 145, 0.5);
   background-color: whitesmoke;
   text-transform: uppercase;
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
   .index__list-item {
     margin: 1rem;
     height: 18rem;
+  }
+  .index__list-item:hover {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(44, 44, 44, 0.5);
+            box-shadow: 0px 0px 6px 0px rgba(44, 44, 44, 0.5);
   }
 }
 
