@@ -212,14 +212,10 @@ body {
   margin: 0 0 1rem 0;
 }
 
-.post__author {
-  font-family: "Roboto Medium";
+.post__author, .post__date {
   margin: 0 0 0.5rem 0;
-}
-
-.post__date {
   font-size: 0.75rem;
-  margin: 0 0 1rem 0;
+  font-family: "Roboto Slab Medium";
 }
 
 .post__summary {
@@ -449,6 +445,7 @@ body {
   font-family: "Roboto Slab Medium";
   margin: 0 0 1rem 0;
   color: #2e8d51;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -457,12 +454,11 @@ body {
   }
 }
 
-.entry__author {
+.entry__author, .entry__timestamp {
   margin: 0 0 1rem 0;
-}
-
-.entry__timestamp {
-  margin: 0 0 1rem 0;
+  color: #094d92;
+  font-family: "Roboto Slab Regular";
+  font-size: 0.75rem;
 }
 
 .entry__content {

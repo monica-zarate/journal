@@ -12,18 +12,19 @@
     font-family: $slab-medium;
     margin: 0 0 1rem 0;
     color: $headers;
+    text-align: center;
 
     @include tablet {
       font-size: 2rem;
     }
   }
 
-  &__author {
-    margin: 0 0 1rem 0;
-  }
-
+  &__author,
   &__timestamp {
     margin: 0 0 1rem 0;
+    color: $primary-color;
+    font-family: $slab-regular;
+    font-size: 0.75rem;
   }
 
   &__content {
