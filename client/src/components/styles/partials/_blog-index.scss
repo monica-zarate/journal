@@ -31,6 +31,7 @@
     @include tablet {
       margin: 1rem;
       height: 18rem;
+      cursor: pointer;
       &:hover {
         box-shadow: 0px 0px 6px 0px rgba(44, 44, 44, 0.5);
       }
