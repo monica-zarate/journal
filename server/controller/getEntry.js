@@ -18,7 +18,7 @@ const getEntry = (path) => {
     from entries as entry
     join keywords as key_1 on entry.keyword1_id = key_1.id
     left join keywords as key_2 on entry.keyword2_id = key_2.id
-    left join keywords as Key_3 on entry.keyword3_id = key_3.id
+    left join keywords as key_3 on entry.keyword3_id = key_3.id
     join authors as author on entry.author_id = author.id
     where entry.path = '${path}'`
   );
