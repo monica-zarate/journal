@@ -68,6 +68,32 @@
     }
   }
 
+  &__keywords-container {
+    @extend .flex-center;
+    margin: 2rem;
+  }
+
+  &__h3 {
+    font-family: $slab-regular;
+    color: $headers;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+
+  &__keywords-list {
+    @extend .flex-center;
+    list-style: none;
+  }
+
   &__keywords {
+    font-family: $bold;
+    margin: 1rem;
+  }
+
+  &__keywords-link {
+    color: $primary-color;
+    &:hover {
+      color: $headers;
+    }
   }
 }
