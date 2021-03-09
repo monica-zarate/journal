@@ -211,7 +211,7 @@ body {
 .post__author-icon {
   height: 4rem;
   width: 4rem;
-  border-radius: 100px;
+  border-radius: 50%;
   margin: 0 0 1rem 0;
 }
 
@@ -264,7 +264,7 @@ body {
 .about-l__icon {
   height: 4rem;
   width: 4rem;
-  border-radius: 100px;
+  border-radius: 50%;
   margin: 0.5rem 0;
 }
 
