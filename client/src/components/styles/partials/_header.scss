@@ -51,6 +51,9 @@
       &:hover {
         color: $headers;
       }
+      &:active {
+        color: $headers;
+      }
     }
   }
 }

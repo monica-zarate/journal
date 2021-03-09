@@ -107,6 +107,9 @@ body {
   .header__link:hover {
     color: #2e8d51;
   }
+  .header__link:active {
+    color: #2e8d51;
+  }
 }
 
 .landing {
